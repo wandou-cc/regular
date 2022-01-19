@@ -1,9 +1,9 @@
 {
 	"name": "regular",
-	"displayName": "Exclusive Translation",
-	"description": "一款简单的安装即用的翻译插件并支持接入三方",
+	"displayName": "Regular",
+	"description": "一款自动输出正则表达式的插件",
 	"publisher": "chenchao",
-	"version": "1.3.0",
+	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
@@ -12,101 +12,30 @@
 		"校验",
 		"regular"
 	],
-	"repository": "https://github.com/wandou-cc/exclusive-translation",
+	"repository": "https://github.com/wandou-cc/regular",
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:exclusive-translation.translation",
-		"onCommand:exclusive-translation.replace"
+		"onCommand:regular.search"
 	],
 	"main": "./src/extension.js",
 	"icon": "icon.png",
 	"contributes": {
 		"commands": [
 			{
-				"command": "exclusive-translation.translation",
-				"title": "%translation.title%"
-			},
-			{
-				"command": "exclusive-translation.replace",
-				"title": "%replace.title%"
+				"command": "regular.search",
+				"title": "正则搜索"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "exclusive-translation.translation",
-				"key": "ctrl+shift+t",
-				"mac": "cmd+shift+t",
-				"when": "editorHasSelection"
-			},
-			{
-				"command": "exclusive-translation.replace",
-				"key": "ctrl+alt+r",
-				"mac": "ctrl+cmd+r",
+				"command": "regular.search",
+				"key": "ctrl+shift+e",
+				"mac": "cmd+shift+e",
 				"when": "editorHasSelection"
 			}
-		],
-		"configuration": {
-			"title": "Exclusive Translation",
-			"properties": {
-				"exclusive-translation.englishLanguage": {
-					"type": "string",
-					"default": "zh",
-					"markdownDescription": "%englishLanguage.markdownDescription%"
-				},
-				"exclusive-translation.exceptEnglishLanguage": {
-					"type": "string",
-					"default": "en",
-					"markdownDescription": "%exceptEnglishLanguage.markdownDescription%"
-				},
-				"exclusive-translation.translationEngine": {
-					"type": "string",
-					"default": "Google",
-					"enum": [
-						"Google",
-						"%wangyi%",
-						"%baidu%",
-						"%alibaba%"
-					],
-					"enumDescriptions": [
-						"%translationEngineG%",
-						"%translationEngineW%",
-						"%translationEngineB%",
-						"%translationEngineA%"
-					]
-				},
-				"exclusive-translation.isHump": {
-					"type": "boolean",
-					"markdownDescription": "%isHump%"
-				},
-				"exclusive-translation.isAutoCopy": {
-					"type": "boolean",
-					"default": false,
-					"markdownDescription": "%isAutoCopy%"
-				},
-				"exclusive-translation.baiduAppid": {
-					"type": "string",
-					"default": "",
-					"definitions": "%baiduAppid%"
-				},
-				"exclusive-translation.baiduPassword": {
-					"type": "string",
-					"default": "",
-					"definitions": "%baiduPassword%"
-				},
-				"exclusive-translation.aliAccessKeyId": {
-					"type": "string",
-					"default": "",
-					"definitions": "%aliAccessKeyId%"
-				},
-				"exclusive-translation.aliAccessKeySecret": {
-					"type": "string",
-					"default": "",
-					"definitions": "%aliAccessKeySecret%"
-				}
-			}
-		}
+		]
 	},
 	"scripts": {
 		"lint": "eslint .",

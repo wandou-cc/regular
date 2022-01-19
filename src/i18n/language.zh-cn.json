@@ -1,13 +1,13 @@
 {
-    "copyTip":"已复制",
-    "viewMore":"查看更多",
-    "biggestCharacter ":"为确保翻译准确请不要超过200字符",
-    "configurationZ" :"未配置English Language 默认置为zh",
-    "configurationE" :"未配置Except English Language 默认置为en",
-    "later":"请稍后",
-    "submitBug":"去提Issues",
-    "aliError":"错误",
-    "BError":"出错请重新尝试",
-    "Bconfiguration":"未配置Appid或密钥",
-    "Gnetwork":"请检查网络，如果您启用代理请关闭代理"
+    "maxCharacter":"为确保查找准确请误超过10个字符",
+    "later":"正在匹配~请稍候",
+    "achieve":"匹配完成",
+    "requireError":"请求失败请重新尝试",
+    "submitBug":"去提bug",
+    "submitNew":"反馈作者",
+    "submitNewTip":"反馈给作者添加",
+    "submitSuccess":"匹配成功",
+    "betterRegularity":"更优的正则",
+    "submitFeedback":"提交建议", 
+    "nullValue":"为匹配到正则表达请精简搜索条件" 
 }
