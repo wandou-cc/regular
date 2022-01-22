@@ -6,7 +6,7 @@ const language = getLanguage()
 // 创建bar
 var bar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left)
 bar.show();
-let baseUrl = 'http://localhost:24081'
+let baseUrl = 'http://120.48.19.18:80'
 
 function isArray(result) {
     let resultArr = []
