@@ -3,7 +3,7 @@
 	"displayName": "Regular",
 	"description": "一款自动输出正则表达式的插件",
 	"publisher": "chenchao",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
