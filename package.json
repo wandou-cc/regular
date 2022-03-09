@@ -1,7 +1,7 @@
 {
-	"name": "regular",
-	"displayName": "Regular",
-	"description": "一款自动输出正则表达式的插件",
+	"name": "regular-plus",
+	"displayName": "Regular-Plus",
+	"description": "正则大全，安装即用",
 	"publisher": "chenchao",
 	"version": "1.0.0",
 	"engines": {
@@ -31,8 +31,8 @@
 		"keybindings": [
 			{
 				"command": "regular.search",
-				"key": "ctrl+shift+e",
-				"mac": "cmd+shift+e",
+				"key": "ctrl+shift+q",
+				"mac": "cmd+shift+q",
 				"when": "editorHasSelection"
 			}
 		]
