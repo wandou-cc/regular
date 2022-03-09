@@ -1,13 +1,13 @@
 {
-    "copyTip":"replicated",
-    "viewMore":"To view more",
-    "biggestCharacter ":"Please do not exceed 200 characters to ensure accurate translation ",
-    "configurationZ" :"Not configured English Language The default setting for zh",
-    "configurationE" :"Not configured Except English LanguageThe default setting for en",
-    "later":"Please later ",
-    "submitBug":"To mention Issues",
-    "aliError":"error",
-    "BError":"Error please try again ",
-    "Bconfiguration":"No Appid or key is configured ",
-    "Gnetwork":"Check the network and disable the proxy if it is enabled "
+    "maxCharacter":"In order to ensure to find accurate error more than 10 characters, please ",
+    "later":"Matching is ~ please wait ",
+    "achieve":"Matching complete ",
+    "requireError":"Request failed, please try again ",
+    "submitBug":"To get a bug ",
+    "submitNew":"Feedback to the author ",
+    "submitNewTip":"Feedback to the authors add ",
+    "submitSuccess":"The match is successful ",
+    "betterRegularity":"More regular ",
+    "submitFeedback":"Submit recommendations ", 
+    "nullValue":"Please search conditions to match to the regular expression " 
 }

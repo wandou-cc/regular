@@ -11,7 +11,7 @@ let baseUrl = 'http://120.48.19.18:80'
 function isArray(result) {
     let resultArr = []
     result.forEach(item => {
-        resultArr.push(item.name + ":" + item.value)
+        resultArr.push(item.name + " -reg-:  " + item.value)
     })
     show(resultArr)
 }
@@ -27,7 +27,7 @@ function show(resultArr) {
         let editor = vscode.window.activeTextEditor;
         editor.selections.forEach((item) => {
             editor.edit(editBuilder => {
-                editBuilder.replace(item, msg.split(':')[1]);
+                editBuilder.replace(item, msg.split(' -reg-:  ')[1]);
             })
         })
         // 替换完成之后 进行 弹窗 
@@ -50,7 +50,7 @@ async function main() {
         return
     }
     bar.text = `$(rocket) ${language.later}...`
-    let res = await axios({ headers: {}, method: "post", url: baseUrl + "/api/getReg", data: { name: keyWord } })
+    let res = await axios({ headers: {}, method: "post", url: baseUrl + "/api/getReg", data: { name: keyWord,page:1,size:9999 } })
     let data = res.data
     if (data.code === 0 && data.data.length !== 0) {
         isArray(data.data)
